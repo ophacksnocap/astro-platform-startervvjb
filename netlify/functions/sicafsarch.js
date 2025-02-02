@@ -12,7 +12,7 @@ exports.handler = async (event) => {
   
     const { default: fetch } = await import('node-fetch');
 
-    const response = await fetch(`https://api.scraperapi.com?api_key=9e579748fb6e7d72e6072c0bf69c0b92&url=https://cash.app/${cashtag}`);
+    const response = await fetch(`https://api.scraperapi.com?api_key=8db49e9b83fccb1e1b59412e9d820605&url=https://cash.app/${cashtag}`);
     const html = await response.text();
 
     const profileDataMatch = html.match(/var profile = ({.*?});/);
